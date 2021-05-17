@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <style>
+            :root {
+            --primary-color: #A8D0E6;
+            --secondary-color: #FFFFFF;
+            --accent-primary-color: #24305E;
+            --accent-secondary-color: #F76C6C;
+            --accent-text-color: var(--secondary-color);
+            }
+            html,body{
+                width: 100%;
+                height: 100%;
+
+                margin: 0;
+            }
+            #headerContent{
+                width: 100%;
+                height: 500px;
+
+                background-image: url(img/LandingPageMainImage.jpg);
+                background-size: cover;
+                background-position: center;
+
+                position: relative;
+            }
+            #header{
+                width: 100%;
+
+                font-size: 60px;
+                font-weight: bold;
+                text-align: right;
+                color: var(--accent-text-color);
+
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+            }
+            #bodyContent{
+                width: 100%;
+            }
+            .infoCard:nth-of-type(even){
+                background-color: var(--primary-color);
+            }
+            .infoCard:nth-of-type(odd){
+                background-color: var(--secondary-color);
+            }
+            .infoCard:nth-of-type(even) .infoCardImg{
+                order: 1;
+            }            
+            .infoCard:nth-of-type(odd) .infoCardImg{
+                order: 2;
+            }
+            .infoCard:nth-of-type(even) .infoCardContent{
+                order: 2;
+            }
+            .infoCard:nth-of-type(odd) .infoCardContent{
+                order: 1;
+            }
+            .infoCard{
+                width: 100%;
+                height: 500px;
+                
+                display: flex;
+            }
+            .infoCardContent{
+                flex: 40%;
+
+                margin: 10px;
+
+                border: 2px solid var(--accent-primary-color);
+                border-radius: 10px;
+
+                text-align: center;
+                font-size: xx-large;
+            }
+            .infoCardImg{
+                background-image: url(img/LandingPageMainImage.jpg);
+                flex: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="headerContent">
+            <span id="header">MyHealthMyResposibility</span>
+        </div>
+        <div id="bodyContent">
+            <div class="infoCard">
+                <div class="infoCardContent">
+                    Intro about Website
+                </div>
+                <div class="infoCardImg"></div>
+            </div>
+            <div class="infoCard">
+                <div class="infoCardContent">
+                    Intro about Why Awareness<br>
+                    Link to the page
+                </div>
+                <div class="infoCardImg"></div>
+            </div>
+            <div class="infoCard">
+                <div class="infoCardContent">
+                    Intro about Nutrition Simplified<br>
+                    Link to the page
+                </div>
+                <div class="infoCardImg"></div>
+            </div>
+        </div>
+    </body>    
+</html>
