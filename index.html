@@ -91,71 +91,11 @@
 
                 background-color: var(--primary-color);
                 
-                overflow: auto;
+                overflow: hidden;
             }
-            #headerContent{
+            #mainContent{
                 width: 100%;
-                height: 500px;
-
-                background-image: url(img/LandingPageMainImage.jpg);
-                background-size: cover;
-                background-position: center;
-
-                position: relative;
-            }
-            #header{
-                width: 100%;
-
-                font-size: 60px;
-                font-weight: bold;
-                text-align: right;
-                color: var(--accent-text-color);
-
-                position: absolute;
-                bottom: 20px;
-                right: 20px;
-            }
-            #bodyContent{
-                width: 100%;
-            }
-            .infoCard:nth-of-type(even){
-                background-color: var(--primary-color);
-            }
-            .infoCard:nth-of-type(odd){
-                background-color: var(--secondary-color);
-            }
-            .infoCard:nth-of-type(even) .infoCardImg{
-                order: 1;
-            }            
-            .infoCard:nth-of-type(odd) .infoCardImg{
-                order: 2;
-            }
-            .infoCard:nth-of-type(even) .infoCardContent{
-                order: 2;
-            }
-            .infoCard:nth-of-type(odd) .infoCardContent{
-                order: 1;
-            }
-            .infoCard{
-                width: 100%;
-                height: 500px;
-                
-                display: flex;
-            }
-            .infoCardContent{
-                flex: 40%;
-
-                margin: 10px;
-
-                border: 2px solid var(--accent-primary-color);
-                border-radius: 10px;
-
-                text-align: center;
-                font-size: xx-large;
-            }
-            .infoCardImg{
-                background-image: url(img/LandingPageMainImage.jpg);
-                flex: 60%;
+                height: 100%;
             }
         </style>
         <script>
@@ -170,6 +110,21 @@
                     document.getElementById("expandButton").style.backgroundColor = "var(--accent-primary-color)"
                 }
             }
+            function loadHomePage(){
+                document.getElementById("mainContent").data = "landingPage.html";
+            }
+            function loadNutritionPage(){
+                document.getElementById("mainContent").data = "nutrition.html";
+            }
+            function loadAwarenessPage(){
+                document.getElementById("mainContent").data = "WhyNutrition.html";
+            }
+            function loadSelfAssessmentPage(){
+                document.getElementById("mainContent").data = "SELFA.html";
+            }
+            function loadRecommendedActionsPage(){
+                document.getElementById("mainContent").data = "actions.html";
+            }
         </script>
     </head>
     <body>
@@ -180,19 +135,19 @@
                     <!-- &rarr; -->
                     &#8801;
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadHomePage()">
                     H
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadAwarenessPage()">
                     W
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadNutritionPage()">
                     N
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadSelfAssessmentPage()">
                     A
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadRecommendedActionsPage()">
                     R
                 </button>
                 <button class="sideNavButton">
@@ -209,19 +164,19 @@
                 <button style="text-align: right;padding-right: 20px;font-size: x-large;" class="sideNavTab" onclick="toggleSideNav()">
                     X
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadHomePage()">
                     Home
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadAwarenessPage()">
                     Why Awareness?
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadNutritionPage()">
                     Nutrition Simplified
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadSelfAssessmentPage()">
                     Self-Assessment
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadRecommendedActionsPage()">
                     Recommended Action
                 </button>
                 <button class="sideNavTab">
@@ -235,31 +190,7 @@
                 </button>
             </div>
             <div id="contentContainer">
-                <div id="headerContent">
-                    <span id="header">MyHealthMyResposibility</span>
-                </div>
-                <div id="bodyContent">
-                    <div class="infoCard">
-                        <div class="infoCardContent">
-                            Intro about Website
-                        </div>
-                        <div class="infoCardImg"></div>
-                    </div>
-                    <div class="infoCard">
-                        <div class="infoCardContent">
-                            Intro about Why Awareness<br>
-                            Link to the page
-                        </div>
-                        <div class="infoCardImg"></div>
-                    </div>
-                    <div class="infoCard">
-                        <div class="infoCardContent">
-                            Intro about Nutrition Simplified<br>
-                            Link to the page
-                        </div>
-                        <div class="infoCardImg"></div>
-                    </div>
-                </div>
+                    <object id="mainContent" type="text/html" data="landingPage.html"></object>
             </div>
         </div>
     </body>
