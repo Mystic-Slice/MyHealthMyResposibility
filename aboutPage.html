@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            :root {
+            --primary-color: #A8D0E6;
+            --secondary-color: #FFFFFF;
+            --accent-primary-color: #24305E;
+            --accent-secondary-color: #F76C6C;
+            --accent-text-color: var(--secondary-color);
+            }
+            html,body{
+                width: 100%;
+                height: 100%;
+
+                margin: 0;
+
+                background-color: var(--primary-color);
+                overflow: auto;
+            }
+            #headerContent{
+                width: 100%;
+                height: 500px;
+
+                background-image: url(img/LandingPageMainImage.jpg);
+                background-size: cover;
+                background-position: center;
+
+                text-align: center;
+            }
+            #header{
+                font-size: 60px;
+                font-family: helvatica;
+                margin-top: 13%;
+                display: inline-block;
+                color: var(--accent-text-color);
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                border: 4px solid;
+            }
+            #bodyContent{
+                width: 100%;
+            }
+            .infoCard:nth-of-type(even){
+                background-color: var(--primary-color);
+            }
+            .infoCard:nth-of-type(odd){
+                background-color: var(--secondary-color);
+            }
+            .infoCard:nth-of-type(even) .infoCardImg{
+                order: 1;
+            }            
+            .infoCard:nth-of-type(odd) .infoCardImg{
+                order: 2;
+            }
+            .infoCard:nth-of-type(even) .infoCardContent{
+                order: 2;
+            }
+            .infoCard:nth-of-type(odd) .infoCardContent{
+                order: 1;
+            }
+            .infoCard{
+                width: 100%;
+                height: 500px;
+                
+                display: flex;
+            }
+            .infoCardContent{
+                flex: 40%;
+
+                margin: 10px;
+
+                border: 2px solid var(--accent-primary-color);
+                border-radius: 10px;
+
+                text-align: center;
+                font-size: xx-large;
+            }
+            .infoCardImg{
+                background-image: url(img/LandingPageMainImage.jpg);
+                flex: 60%;
+            }
+            .section{
+                width: 100% - 20px;
+                height: 500px;
+
+                margin: 10px;
+                
+                border: 2px solid var(--accent-primary-color);
+                border-radius: 10px;
+            }
+            .sectionHeader{
+
+                margin: 10px;
+                padding-top: 10px;
+
+                text-align: center;
+                font-size: 60px;
+                color: var(--accent-text-color);
+            }
+            .sectionContent{
+
+                margin: 10px;
+                padding: 20px;
+
+                text-align: left;
+                font-size: xx-large;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="headerContent">
+            <span id="header">About Us</span>
+        </div>
+        <div id="bodyContent">
+            
+            <div class="section">
+                <div class="sectionHeader">
+                    Disclaimer
+                </div>
+                <div class="sectionContent">
+                    <ul>
+                        <li>The information published here is collected from different sources, mentioned in references section. The information may be slightly modified in order to simplify the concepts to the target audience.</li> 
+                        <li>Information provided as guidance to understand, motivate and increase the awareness of Nutritious and Healthy food habits. </li> 
+                        <li>The information provided focusses on generalized audience, and additional personalized information in specific cases (medical / co-morbid conditions) can be sought through consultation of a Nutritionist. </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <div class="sectionHeader">
+                    References
+                </div>
+                <div class="sectionContent">
+                    <ul>
+                        <li><a target="_blank" href="https://www.nin.res.in/downloads/DietaryGuidelinesforNINwebsite.pdf">https://www.nin.res.in/downloads/DietaryGuidelinesforNINwebsite.pdf</a> </li>
+                        <li><a target="_blank" href="https://www.bmj.com/content/361/bmj.k2392">https://www.bmj.com/content/361/bmj.k2392</a></li>
+                        <li><a target="_blank" href="https://www.britannica.com/science/body-mass-index">https://www.britannica.com/science/body-mass-index</a></li>
+                        <li><a target="_blank" href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_dis.htm">https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_dis.htm</a></li>
+                        <li><a target="_blank" href="https://cronometer.com/">Cronometer.com</a> </li>
+                        <li><a target="_blank" href="https://www.strava.com/">Strava.com </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
