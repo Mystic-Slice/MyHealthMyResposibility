@@ -119,6 +119,9 @@
             function loadRecommendedActionsPage(){
                 document.getElementById("mainContent").data = "actions.html";
             }
+            function loadAboutPage(){
+                document.getElementById("mainContent").data = "aboutPage.html";
+            }
         </script>
     </head>
     <body>
@@ -130,7 +133,7 @@
                     &#8801;
                 </button>
                 <button class="sideNavButton" onclick="loadHomePage()">
-                    <img src="img/icons/1564508-512.png" width="70%" height="70%">
+                    <img src="img/icons/Home-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton" onclick="loadAwarenessPage()">
                     W
@@ -147,11 +150,11 @@
                 <button class="sideNavButton">
                     T
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadAboutPage()">
                     A
                 </button>
                 <button class="sideNavButton">
-                    S
+                    <img src="img/icons/Account-512.png" width="70%" height="70%">
                 </button>
             </div>
             <div id="sideNavExpandedView">
@@ -176,7 +179,7 @@
                 <button class="sideNavTab">
                     Tools
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadAboutPage()">
                     About
                 </button>
                 <button class="sideNavTab">
