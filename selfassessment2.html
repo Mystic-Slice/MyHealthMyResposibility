@@ -1,0 +1,354 @@
+<html>
+<head>
+    <title>
+        Self Assessment
+    </title>
+    <style>
+    :root
+    {
+    --primary-color: #A8D0E6;
+    --secondary-color: #FFFFFF;
+    --accent-primary-color: #24305E;
+    --accent-secondary-color: #F76C6C;
+    --accent-text-color: var(--secondary-color);
+    } 
+    #body{
+            margin: 0;
+            overflow-x: hidden;
+            font-size: large;
+    }
+    .mainheading{
+        position:absolute;
+        border-style: solid;
+        border-width: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        left:5%;
+        top: 33%;
+        font-size: 45px;
+        color: var(--secondary-color);
+
+     }
+     .mainbody1{
+         background-color: var(--accent-primary-color);
+         padding-top: 1%;
+         padding-bottom: 4%;
+     }
+     .bodycon1{
+        margin-left: 4%;
+     }
+     .bodybg{
+        background-color:var(--accent-secondary-color) ;
+        padding-top: 2%;
+        padding-bottom: 9%;
+        padding-left: 4%;
+        margin-right: 40%;
+        border-style: solid;
+        border-color: var(--primary-color);
+        border-width: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        }
+     .profileimg{
+        position:absolute;
+        left:48%;
+        top:101%;
+     }
+     .profilehead{
+         color:var(--secondary-color);
+         font-size: 30px;
+         background-color: var(--accent-secondary-color);
+         margin-right: 40%;
+         padding-left: 1%;
+     }
+     .formscon{
+        color:var(--secondary-color);
+        font-size: 23px;
+     }
+     .bodagepos{
+         position:relative;
+         left:1%;
+     }
+     .genderradiopos{
+         position:relative;
+         left:1%;
+     }
+     .lovradiopos{
+        position:relative;
+         left:15.5%;  top:118%;
+     }
+     .femalepos{
+         position:relative;
+         left:11.3%;
+     }
+     .otherspos{
+         position:relative;
+         left:11.3%;
+     }
+     .lovfontpos{
+         position:absolute;
+         top:119.4%;
+         left:6.5%;
+     }
+     .targetpos{
+         position:relative;
+         left:31%;
+         
+     }
+     .targetfontpos{
+         position:absolute;
+         top:136.5%;
+         left:6.5%;
+     }
+     .submitpos{
+        position:absolute;
+        top:155%;
+        left:6.5%;
+     }
+     .mainbody2{
+        background-color: var(--accent-secondary-color);
+         color: var(--secondary-color);
+         padding-bottom: 3%;
+         padding-top: 1%;
+     }
+     .mainbody2con{
+         margin-left:42%;
+         font-size: 25px;
+     }
+     .formcon{
+        border-style: solid;
+        background-color: var(--accent-primary-color);
+        border-color: var(--primary-color);
+        border-width: 5px;
+        margin-right: 6%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 1%;
+     }
+     .bmichartimg{
+         position:absolute;
+         top:194.5%;
+         left:3%;
+         border-style: solid;
+         border-width: 5px;
+         border-color: var(--primary-color);
+        margin-right: 64%;
+     }
+     .bmichartfont{
+         position:absolute;
+         top:258%;
+         left:15.5%;
+         font-size: 20px;
+     }
+     .mainbody3{
+         background-color: var(--accent-primary-color);
+         color: var(--secondary-color);
+         padding-top: 1%;
+         padding-bottom: 3%;
+     }
+     .calhead{
+         font-size: 27px;
+         margin-left: 3%;
+         margin-right: 40%;
+         padding-left: 1%;
+     }
+     .calbody{
+         margin-left: 4%;
+     }
+     .eghead{
+         position:absolute;
+         top:321.5%;
+         left:4.4%;
+     }
+     .mainbody4{
+        background-color: var(--accent-secondary-color);
+         padding-top: 1%;
+         padding-bottom: 4%;
+     }
+     .analyzehead{
+        font-size: 27px;
+         margin-left: 4%;
+         background-color: var(--accent-primary-color);
+         margin-right: 40%;
+         padding-left: 1%;
+         color: var(--secondary-color);
+     }
+     .analyzecon{
+        margin-left: 4%;
+        color: var(--secondary-color);
+        font-size: 22px;
+     }
+     .analyzeimg{
+         position:relative;
+         left:4%;
+         width: 60%;
+         border-style: solid;
+         border-color: var(--primary-color);
+         border-width: 5px;
+     }
+    </style>
+ </head>   
+ <body style="margin: 0;">
+
+     <div class="mainheading">
+         YOUR CALORIE REQUIREMENT
+     </div>
+     <img src="img/selfa2head.jpg" alt="bgimg" width="100%" height="500px">
+
+     <div class="mainbody1">
+     <div class="bodycon1">
+            <div class="profilehead">
+                <h3>Enter the Details</h3>
+            </div>
+            <div class="bodybg">
+                <div class="profileimg">
+                    <img src="img/profilepic.jpg" alt="bmilog" width="65%">
+                 </div>
+                 <div class="formscon">
+                    <forms>
+                        <div class="bodagepos">
+                         <label for="weight">Body Weight :</label>
+                         <input type="number" id="weight" name="weight">
+                         <select>
+                             <option>kg</option>
+                             <option>lbs</option>
+                         </select><br/>
+                         <label for="age">Age :</label>
+                         <input type="number" id="age" name="age"><br/>
+                        </div>
+                        <div class="genderradiopos">
+                            <label for="gender">Gender :</label>
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Male</label><br/>
+                            <div class="femalepos">
+                             <input type="radio" id="female" name="gender">
+                             <label for="female">Female</label><br/>
+                            </div>
+                            <div class="otherspos">
+                             <input type="radio" id="other" name="gender">
+                             <label for="others">Others</label><br/>
+                            </div>
+                        </div>
+                        <div class="lovradiopos">
+                            <input type="radio" id="male" name="lov">
+                            <label for="male">Sedentary</label><br/>
+                            <input type="radio" id="female" name="lov">
+                            <label for="female">Lightly Active</label><br/>
+                            <input type="radio" id="other" name="lov">
+                            <label for="others">Moderately Active</label><br/>
+                            <input type="radio" id="other" name="lov">
+                            <label for="others">Very Active</label><br/>
+                        </div>
+                        <div class="targetpos">
+                         <input type="number" id="target" name="target">
+                         <select>
+                             <option>kg</option>
+                             <option>lbs</option>
+                         </select><br/>
+                        </div>
+                        <div class="submitpos">
+                            <input type="submit" value="submit">
+                        </div>
+                    </forms>
+                    <div class="lovfontpos">
+                        <p style="font-size: 23px;">Life Style :<br/>(LOV)</p>
+                    </div>
+                    <div class="targetfontpos">
+                     <p style="font-size: 23px;">Target Weight Change :<br/>
+                         (enter Zero if you are <br/>looking for only
+                         weight maintenance)</p>
+                    </div>
+                </div>
+            </div>
+     </div>
+     </div>
+
+     <div class="mainbody2">
+        <div class="mainbody2con">
+            <h3 style="position:relative;font-size: 34px;">Your Report - Calories for daily activities </h3>
+            <div class="formcon">
+                BMI= BW / (H/100)<sup>2</sup><br/>
+                BMI Category : Refer the image<br/>
+            </div>
+            <div class="formcon">
+                Calories for survival standard maintenance (BMR) :<br/>
+                Male BMR : BW * 24<br/>
+                Female BMR : BW* 22.5
+            </div>
+            <div class="formcon">
+                Calories for
+                Daily Energy
+                Expenditure :<br/>
+                BMR *Lifestyle PAL<br/>
+                [Lifestyle PAL : Sedentary (1.1),
+                Lightly Active (1.3),
+                Moderately Active
+                (1.5), Very Active
+                (1.7)]
+            </div>
+            <div class="formcon">
+                Waist
+                Circumference :<br/>
+                >40” for Men [Risk]<br/>
+                > 35 inch for Women [Risk]
+            </div>
+        </div>
+        <div class="bmichartimg">
+            <img src="img/bmi-chart.png" alt="chart" width="100%">
+        </div>
+        <div class="bmichartfont">
+            BMI Chart
+        </div>
+     </div>
+
+     <div class="mainbody3">
+        <div class="calhead">
+            <h3>Calculate Energy Spent toward exercise Activities : </h3>
+        </div>
+        <div class="calbody">
+            <p style="font-size: 23px;">Steps involved in calculating energy spent towards exercise activities :<br/>
+                <ul style="font-size: 23px;list-style-type:lower-alpha;">
+                    <li>
+                        Please note down on a sheet, the set of activities you perform daily and
+                spend calories.
+                    </li>
+                    <li>
+                        From the below links, identify the most appropriate activity and
+                corresponding METS<br/> Code. This is an international guideline to calculate
+                calories spent for an activity. You<br/> can refer to one of the links given below.<br/>
+                <a href="https://sites.google.com/site/compendiumofphysicalactivities/compendia/
+                2011%20Compendium%20of%20Physical%20Activities.pdf?attredirects=0&d
+                =1 " target="_blank" style="color: var(--secondary-color);font-size: 23px;">
+            Link 1</a>
+            <a href="https://www.ergotron.com/portals/0/literature/compendium-of-physical-activities.pdf" target="_blank" style="color: var(--secondary-color);font-size: 23px;">Link 2</a>
+            <a href="http://prevention.sph.sc.edu/tools/docs/documents_compendium.pdf" target="_blank" style="color: var(--secondary-color);font-size: 23px;">Link 3</a>
+                    </li>
+                    <li>
+                        Note down body weight
+                    </li>
+                    <li>Enter the details of the activities and calculate calories for each activity.
+                        Calories = Body Weight * METS * Duration/60 
+                        </li>
+                </ul>
+        <img src="img/extable.png" alt="eg" width="40%" style="position:relative;left:8.5%">
+        <div class="eghead">
+            <p style="font-size: 23px;">Example :</p>
+        </div>
+        </div>
+     </div>
+     
+     <div class="mainbody4">
+         <div class="analyzehead">
+            <h3>Analyzing BMI:</h3>
+         </div>
+         <p class="analyzecon">
+            The below table details BMI categories and possible risks when analyzed along with
+            Waist circumference.             
+         </p>
+         <div class="analyzeimg">
+             <img src="img/analyzebmi.png" alt="tableana" width="100%">
+        </div>  
+     </div>
+ </body>
+
+</html>
