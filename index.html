@@ -42,8 +42,8 @@
             }
             .sideNavButton{
                 width: 100%;
-                height: 11%;
-                min-height: 60px;
+                height: 9%;
+                min-height: 55px;
 
                 background-color: var(--accent-primary-color);
                 border: 0;
@@ -68,8 +68,8 @@
             }            
             .sideNavTab{
                 width: 100%;
-                height: 11%;
-                min-height: 60px;
+                height: 9%;
+                min-height: 55px;
 
                 background-color: var(--accent-secondary-color);
                 border: 0;
@@ -114,13 +114,22 @@
                 document.getElementById("mainContent").data = "WhyNutrition.html";
             }
             function loadSelfAssessmentPage(){
-                document.getElementById("mainContent").data = "SELFA.html";
+                document.getElementById("mainContent").data = "selfassessment1.html";
+            }
+            function loadCalculatorsPage(){
+                document.getElementById("mainContent").data = "selfassessment1.html";
             }
             function loadRecommendedActionsPage(){
                 document.getElementById("mainContent").data = "actions.html";
             }
+            function loadFAQPage(){
+                document.getElementById("mainContent").data = "FAQ.html";
+            }
             function loadAboutPage(){
                 document.getElementById("mainContent").data = "aboutPage.html";
+            }
+            function loadLoginPage(){
+                document.getElementById("mainContent").data = "login_page.html";
             }
         </script>
     </head>
@@ -128,38 +137,48 @@
         <div id="outerContainer">
             <div id="sideNavBar">
                 <!--Letters to be replaced by icons-->
-                <button id="expandButton" class="sideNavButton" style="font-size: xx-large;" onclick="toggleSideNav()">
+                <button id="expandButton" class="sideNavButton" style="font-size: 40px;" onclick="toggleSideNav()">
                     <!-- &rarr; -->
                     &#8801;
+                </button>
+                <button class="sideNavButton" onclick="loadLoginPage()">
+                    <img src="img/icons/Account-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton" onclick="loadHomePage()">
                     <img src="img/icons/Home-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton" onclick="loadAwarenessPage()">
-                    W
+                    <img src="img/icons/WhyAwareness-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton" onclick="loadNutritionPage()">
-                    N
+                    <img src="img/icons/Nutrients-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton" onclick="loadSelfAssessmentPage()">
                     <img src="img/icons/Assessment-512.png" width="70%" height="70%">
+                </button>
+                <button class="sideNavButton" onclick="loadCalculatorsPage()">
+                    <img src="img/icons/Calculator-512.png" width="90%" height="60%">
                 </button>
                 <button class="sideNavButton" onclick="loadRecommendedActionsPage()">
                     <img src="img/icons/Actions-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton">
-                    <img src="img/icons/Tools-512.png" width="70%" height="70%">
+                    <img src="img/icons/Tools-512.png" width="60%" height="60%">
+                </button>
+                <button class="sideNavButton" onclick="loadFAQPage()">
+                    <img src="img/icons/FAQ-512.png" width="70%" height="70%">
                 </button>
                 <button class="sideNavButton" onclick="loadAboutPage()">
                     <img src="img/icons/About-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton">
-                    <img src="img/icons/Account-512.png" width="70%" height="70%">
-                </button>
+                
             </div>
             <div id="sideNavExpandedView">
                 <button style="text-align: right;padding-right: 20px;font-size: x-large;" class="sideNavTab" onclick="toggleSideNav()">
                     X
+                </button>
+                <button class="sideNavTab" onclick="loadLoginPage()">
+                    Sign-up/Sign-in
                 </button>
                 <button class="sideNavTab" onclick="loadHomePage()">
                     Home
@@ -173,18 +192,22 @@
                 <button class="sideNavTab" onclick="loadSelfAssessmentPage()">
                     Self-Assessment
                 </button>
+                <button class="sideNavTab" onclick="loadCalculatorsPage()">
+                    Calculators
+                </button>
                 <button class="sideNavTab" onclick="loadRecommendedActionsPage()">
                     Recommended Action
                 </button>
                 <button class="sideNavTab">
                     Tools
                 </button>
+                <button class="sideNavTab" onclick="loadFAQPage()">
+                    FAQ
+                </button>
                 <button class="sideNavTab" onclick="loadAboutPage()">
                     About
                 </button>
-                <button class="sideNavTab">
-                    Sign-up/Sign-in
-                </button>
+                
             </div>
             <div id="contentContainer">
                     <object id="mainContent" type="text/html" data="landingPage.html"></object>
