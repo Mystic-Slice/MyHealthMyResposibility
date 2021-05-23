@@ -1,0 +1,223 @@
+:root
+{
+    --primary-color: #A8D0E6;
+    --secondary-color: #FFFFFF;
+    --accent-primary-color: #24305E;
+    --accent-secondary-color: #F76C6C;
+    --accent-text-color: var(--secondary-color);
+}
+.Main-heading 
+{
+    position: relative;
+}
+.background
+{
+    filter: brightness(50%);
+    width: 100%;
+    height: 655px;
+}
+.text 
+{
+    position: absolute;
+    font-size: 30px;
+    font-family: helvatica;
+    text-align: center;
+    top: 25%;
+    left: 13%;
+    color: var(--secondary-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 4px;
+}
+.Health
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;   
+    background-color:var(--accent-secondary-color);
+    width: 100%;
+    height:350px;
+    margin: 1px;
+    margin-bottom: 5px;
+    
+}
+.Himage
+{
+    flex: 30%;
+    background-image: url(img/awarenesshealth.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+}
+.Htext 
+{
+    flex: 70%;
+    font-size: 30px;
+    font-family: helvatica;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    color: var(--secondary-color);
+    
+}
+#healthHeading
+{
+    font-size: 70px;
+    font-family: helvatica;
+    padding-left: 300px;   
+    color: var(--primary-color); 
+}
+
+.Nutrition
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;   
+    background-color:var(--primary-color);
+    width: 100%;
+    height:350px;
+    margin-bottom: 5px;
+    
+}
+.Nimage
+{
+    flex: 30%;
+    background-image: url(img/awarenessnutrition.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Ntext 
+{
+    flex: 70%;
+    font-size: 30px;
+    font-family: helvatica;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    color: var(--secondary-color);
+    
+}
+#NutritionHeading
+{
+    font-size: 70px;
+    font-family: helvatica;
+    padding-left: 300px;   
+    color: var(--accent-secondary-color); 
+}
+
+.Diet
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;   
+    background-color:var(--accent-secondary-color);
+    width: 100%;
+    height:350px;
+    margin-bottom: 5px;
+}
+.Dimage
+{
+    flex: 30%;
+    background-image: url(img/awarenessdiet.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.Dtext 
+{
+    flex: 70%;
+    font-size: 30px;
+    font-family: helvatica;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    color: var(--secondary-color);
+    
+}
+#DietHeading
+{
+    font-size: 70px;
+    font-family: helvatica;
+    padding-left: 300px;   
+    color: var(--primary-color); 
+}
+.Awareness
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;   
+    background-color:var(--primary-color);
+    width: 100%;
+    height:1360px; 
+    margin-bottom: 5px; 
+}
+.Whyimg
+{
+    right: 0px;
+    top: 0px;
+    text-align: right;
+    position: absolute;
+    z-index: 1;
+}
+.AwarenessText
+{
+    font-size: 30px;
+    font-family: helvatica;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    color: var(--accent-primary-color);
+}
+#WhyHeading
+{
+    font-size: 69px;
+    font-family: helvatica;   
+    color: var(--accent-secondary-color); 
+}
+.Challenges
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;   
+    background-color:var(--accent-secondary-color);
+    height:wrap;
+    margin-bottom: 5px;
+}
+.ChallengesText
+{
+    flex: 70%;
+    font-size: 30px;
+    font-family: helvatica;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    color: var(--secondary-color);
+}
+.Challengeimg
+{
+    background-image: url(img/awarenesschallenge.jpg);
+    flex: 30%;
+    background-size: contain;
+    z-index: 1;
+}
+#ChallengesHeading
+{
+    font-size: 70px;
+    font-family: helvatica; 
+    color: var(--accent-primary-color); 
+    text-align: center;
+    padding-left: 100px;
+}
+.Timeline
+{
+    background-color: var(--primary-color);
+    z-index: 1;
+    text-align: center;
+}
