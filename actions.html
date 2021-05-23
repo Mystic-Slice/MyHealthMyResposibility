@@ -60,6 +60,7 @@ html,body{
  background-color:orange;
 }
 .cards{
+  position: relative;
   width: auto;
  height: 450px;
  display: flex;
@@ -102,7 +103,14 @@ background-size: cover;
 
 body{
   margin: 0;
-}        
+}   
+
+#video{
+  position: absolute;
+  top: 0.5%;
+  right:1%;
+
+}
 </style>
 <body style margin: 0px>
         <div class="Main-heading" >
@@ -221,9 +229,37 @@ As per energy balance it can be balanced in three ways,
           intake (A), over target period, follow up plan to gain weight.)
         </p>
            </div> 
-           <div class="cardsimg" style="background-image: url(img/burn_more_calories.jpg);">
+           <div class="cardsimg" style="background-image: url(img/burn_more_calories.jpg);"></div>
            </div>
         </div>
 
+
+
+        <div class="cards" style="height:350px;" > 
+          <div class="cardscont" style=";font-size: 25px">
+          <p>
+            User can plan his calorie intake, and exercise expenditure as per his goals. <br>
+            <b>Exercise Options</b> 
+            One can consider different exercise options to meet their requirements. 
+            <ol>
+            <li> Endurance</li> 
+          <li>Strength </li>
+          <li>Balance </li>
+          <li> Flexibility </li>
+          </ol>
+          
+            Covering detailed exercises is not part of the scope of this website, but some useful 
+            information is provided here for reference.<br>
+            More information can be found at <a href="https://www.nutrition.gov/topics/exercise-and-fitness" target="_blank">click here</a>
+         </p>
+        <div id="video">
+         <video width="320" height="240" controls > 
+          <source src="videos/burn1.mp4" type="video/mp4">            
+           Your browser does not support the video tag. 
+         </video> 
+        </div>
+          
+        </div>   
+        </div>
       
       </body>

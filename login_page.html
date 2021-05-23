@@ -2,10 +2,10 @@
 <body>
     <style>
         #background{
-        filter: brightness(50%);
+        filter: brightness(60%);
         background-size: cover;
         width: 100%;
-    height: 585px;
+    height: 100%;
         }
     body{
         margin: 0;
@@ -16,16 +16,24 @@
         font-size: 30px;
         font-family: helvatica;
         text-align: center;
-        top: 25%;
-        left: 15%;
+        top: 28%;
+        left: 35%;
         color: white;
-        padding-left:40px;
+        padding-left:20px;
         padding-right: 20px;
         padding-bottom: 20px;
-        padding-right: 40px;
+       
         border-style: solid;
         border-width: 4px;
         
+    }
+
+    .btn{
+        background-color: rgb(129, 152, 153);
+        width: 10%;
+        height: 15%;
+        color:white;
+        font-size: 16px;
     }
     #textbox{
      height: 30px  ;
@@ -33,7 +41,7 @@
     }
     </style>
 <div >
-    <img src="img/awarenessbackground.jpg" alt="IMG" id="background" >
+    <img src="img/lg_pg_2.jpg" alt="IMG" id="background"  >
 <div class="text">
     <form method="get">
 <h2>MY HEALTH MY RESPONSIBILITY</h2>
@@ -45,7 +53,8 @@ Email ID:
 Password:
 <input type="password" placeholder="Enter password here" id="textbox" required/><br>
 <br>
-<button type="button" onclick="alert('You had logged in successfully')">log in</button>
+<input type="submit" onclick="alert('You had logged in successfully')" value="LOGIN" class="btn">
+
 </form>
 </div>
 </div>
