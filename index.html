@@ -108,19 +108,22 @@
                 document.getElementById("mainContent").data = "landingPage.html";
             }
             function loadNutritionPage(){
-                document.getElementById("mainContent").data = "nutrition.html";
+                document.getElementById("mainContent").data = "nutritionnew.html";
             }
             function loadAwarenessPage(){
                 document.getElementById("mainContent").data = "WhyNutrition.html";
             }
             function loadSelfAssessmentPage(){
-                document.getElementById("mainContent").data = "selfassessment1.html";
+                document.getElementById("mainContent").data = "selfassessment.html";
             }
             function loadCalculatorsPage(){
-                document.getElementById("mainContent").data = "selfassessment1.html";
+                document.getElementById("mainContent").data = "selfassessment2.html";
             }
             function loadRecommendedActionsPage(){
                 document.getElementById("mainContent").data = "actions.html";
+            }
+            function loadToolsPage(){
+                document.getElementById("mainContent").data = "tools.html";
             }
             function loadFAQPage(){
                 document.getElementById("mainContent").data = "FAQ.html";
@@ -162,7 +165,7 @@
                 <button class="sideNavButton" onclick="loadRecommendedActionsPage()">
                     <img src="img/icons/Actions-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton">
+                <button class="sideNavButton" onclick="loadToolsPage()">
                     <img src="img/icons/Tools-512.png" width="60%" height="60%">
                 </button>
                 <button class="sideNavButton" onclick="loadFAQPage()">
@@ -198,7 +201,7 @@
                 <button class="sideNavTab" onclick="loadRecommendedActionsPage()">
                     Recommended Action
                 </button>
-                <button class="sideNavTab">
+                <button class="sideNavTab" onclick="loadToolsPage()">
                     Tools
                 </button>
                 <button class="sideNavTab" onclick="loadFAQPage()">
