@@ -52,20 +52,22 @@
 .QuestionCard:nth-of-type(even) .Question_Answer
 {
     order: 2;
-    color: var(--accent-primary-color);
+    color: black;
 }
 .QuestionCard:nth-of-type(odd) .Question_Answer
 {
     order: 1;
-    color: var(--secondary-color);
+    color: black;
 }
 .QuestionCard:nth-of-type(even) .Question
 {
-    color: var(--accent-secondary-color);
+    color: black;
+    font-weight: bold;
 }
 .QuestionCard:nth-of-type(odd) .Question
 {
-    color: var(--accent-primary-color);
+    color: black;
+    font-weight: bold;
 }
 .QuestionCard{
     width: 100%;
