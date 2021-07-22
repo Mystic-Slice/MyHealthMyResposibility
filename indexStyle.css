@@ -43,6 +43,24 @@
 
         font-size: x-large;
         color: var(--accent-text-color);
+
+        transition-duration: 0.4s;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .sideNavButton::after {
+        background-color: var(--accent-secondary-color);
+        opacity: 0;
+        transition: all 0.8s
+    }
+    .sideNavButton:active::after {
+        background-color: var(--accent-secondary-color);
+        opacity: 1;
+        transition: 0s
+    }
+    .sideNavButton:hover {
+        background-color: var(--accent-secondary-color);
+        transition: all 0.8s
     }
     #sideNavExpandedView{
         flex: 0%;
