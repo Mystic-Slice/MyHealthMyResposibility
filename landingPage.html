@@ -1,101 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            MyHealthMyResposibility
-        </title>
-        <style>
-            :root {
-            --primary-color: #A8D0E6;
-            --secondary-color: #FFFFFF;
-            --accent-primary-color: #24305E;
-            --accent-secondary-color: #F76C6C;
-            --accent-text-color: var(--secondary-color);
+        <link rel="stylesheet" href="landingPageStyle.css"/>
+        <script>
+            var slideIndex = 0;
+            function slideShow() {
+            var i;
+            var x = document.getElementsByClassName("reviewSlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
             }
-            html,body{
-                width: 100%;
-                height: 100%;
-
-                margin: 0;
-
-                overflow: auto;
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}    
+            x[slideIndex-1].style.display = "block";  
+            setTimeout(slideShow, 4000); // Change image every 2 seconds
             }
-            #headerContent{
-                width: 100%;
-                height: 500px;
-
-                background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(img/LandingPageMainImage.jpg);
-                background-size: cover;
-                background-position: center;
-
-                text-align: center;
-            }
-            #header{
-                padding-left: 20px;
-                padding-right: 20px;
-                padding-bottom: 20px;                
-                margin-top: 11%;
-
-                border: 4px solid;
-
-                font-size: 80px;
-                font-family: helvatica;
-                font-weight: bold;
-                color: var(--accent-text-color);
-
-                display: inline-block;
-            }
-            #bodyContent{
-                width: 100%;
-            }
-            .infoCard:nth-of-type(even){
-                background-color: var(--primary-color);
-            }
-            .infoCard:nth-of-type(odd){
-                background-color: var(--secondary-color);
-            }
-            .infoCard:nth-of-type(even) .infoCardImg{
-                order: 1;
-            }            
-            .infoCard:nth-of-type(odd) .infoCardImg{
-                order: 2;
-            }
-            .infoCard:nth-of-type(even) .infoCardContent{
-                order: 2;
-            }
-            .infoCard:nth-of-type(odd) .infoCardContent{
-                order: 1;
-            }
-            .infoCard{
-                width: 100%;
-                height: 450px;
-                
-                display: flex;
-            }
-            .infoCardContent{
-                flex: 60%;
-
-                margin: 10px;
-                padding: 20px;
-
-                border: 2px solid var(--accent-primary-color);
-                border-radius: 10px;
-
-                text-align: justify;
-                font-size: xx-large;
-            }
-            .infoCardContentHeader{
-                width: 100%;
-
-                font-size: 60px;
-                text-align: center;
-            }
-            .infoCardImg{
-                flex: 40%;
-                background-size: cover;
-                background-position: right;
-            }
-        </style>
+            setTimeout(slideShow, 0);
+        </script>
     </head>
     <body>
         <div id="headerContent">
@@ -132,7 +53,7 @@ But the question that we need to ask ourselves is if we know all about the nutri
 Here we will try our best to answer that question by providing information like the classification of nutrients based on quantity and quality
 and also take a peak into concepts like BMI,waist circumference and growth charts.
                 </div>
-                <div class="infoCardImg"></div>
+                <div class="infoCardImg" style="background-image: url(img/nutritionLandingPage.jpg);"></div>
             </div>
             <div class="infoCard">
                 <div class="infoCardContent">
@@ -152,6 +73,19 @@ some helpful resourses like the cronometer,the guide published by the NIN and fi
                 </div>
                 <div class="infoCardImg" style="background-image: url(img/selfassessmentLandingPage.jpg);background-position: center;"></div>
             </div>
+            <div class="infoCard">
+                <div class="infoCardContent">
+                    <span class="infoCardContentHeader">Recommended Actions</span><br><hr>
+                    In recommended actions we will know how to balance the calorie. 
+                    It can be done in three ways weight gain, weight loss and weight maintenance. 
+                    We need to equalize calorie intake and calorie expenditure. 
+                    This can be done by reducing the calorie intake or increase the calorie expenditure.
+                </div>
+                <div class="infoCardImg" style="background-image: url(img/recommendedActionsLandingPage.jpg);background-position: center top;"></div>
+            </div>
+            <img class="reviewSlides" src="img/slide-1.jpg"/>
+            <img class="reviewSlides" src="img/slide-2.jpg"/>
+            <img class="reviewSlides" src="img/slide-3.jpg"/>
         </div>
     </body>
 </html>
