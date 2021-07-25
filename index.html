@@ -17,35 +17,8 @@
                     document.getElementById("expandButton").style.backgroundColor = "var(--accent-primary-color)"
                 }
             }
-            function loadHomePage(){
-                document.getElementById("mainContent").data = "landingPage.html";
-            }
-            function loadNutritionPage(){
-                document.getElementById("mainContent").data = "nutritionnew.html";
-            }
-            function loadAwarenessPage(){
-                document.getElementById("mainContent").data = "WhyNutrition.html";
-            }
-            function loadSelfAssessmentPage(){
-                document.getElementById("mainContent").data = "selfassessment.html";
-            }
-            function loadCalculatorsPage(){
-                document.getElementById("mainContent").data = "selfassessment2.html";
-            }
-            function loadRecommendedActionsPage(){
-                document.getElementById("mainContent").data = "actions.html";
-            }
-            function loadToolsPage(){
-                document.getElementById("mainContent").data = "tools.html";
-            }
-            function loadFAQPage(){
-                document.getElementById("mainContent").data = "FAQ.html";
-            }
-            function loadAboutPage(){
-                document.getElementById("mainContent").data = "aboutPage.html";
-            }
-            function loadLoginPage(){
-                document.getElementById("mainContent").data = "login_page.html";
+            function loadPage(fileName){
+                document.getElementById("mainContent").data = fileName;
             }
         </script>
     </head>
@@ -57,73 +30,71 @@
                     <!-- &rarr; -->
                     &#8801;
                 </button>
-                <button class="sideNavButton" onclick="loadLoginPage()">
+                <button class="sideNavButton" onclick="loadPage('login_page.html')">
                     <img src="img/icons/Account-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadHomePage()">
+                <button class="sideNavButton" onclick="loadPage('landingPage.html')">
                     <img src="img/icons/Home-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadAwarenessPage()">
+                <button class="sideNavButton" onclick="loadPage('WhyNutrition.html')">
                     <img src="img/icons/WhyAwareness-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadNutritionPage()">
+                <button class="sideNavButton" onclick="loadPage('nutritionnew.html')">
                     <img src="img/icons/Nutrients-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadSelfAssessmentPage()">
+                <button class="sideNavButton" onclick="loadPage('selfassessment.html')">
                     <img src="img/icons/Assessment-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadCalculatorsPage()">
+                <button class="sideNavButton" onclick="loadPage('selfassessment2.html')">
                     <img src="img/icons/Calculator-512.png" width="90%" height="60%">
                 </button>
-                <button class="sideNavButton" onclick="loadRecommendedActionsPage()">
+                <button class="sideNavButton" onclick="loadPage('actions.html')">
                     <img src="img/icons/Actions-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadToolsPage()">
+                <button class="sideNavButton" onclick="loadPage('tools.html')">
                     <img src="img/icons/Tools-512.png" width="60%" height="60%">
                 </button>
-                <button class="sideNavButton" onclick="loadFAQPage()">
+                <button class="sideNavButton" onclick="loadPage('FAQ.html')">
                     <img src="img/icons/FAQ-512.png" width="70%" height="70%">
                 </button>
-                <button class="sideNavButton" onclick="loadAboutPage()">
+                <button class="sideNavButton" onclick="loadPage('aboutPage.html')">
                     <img src="img/icons/About-512.png" width="70%" height="70%">
-                </button>
-                
+                </button>                
             </div>
             <div id="sideNavExpandedView">
                 <button style="text-align: right;padding-right: 20px;font-size: x-large;" class="sideNavTab" onclick="toggleSideNav()">
                     X
                 </button>
-                <button class="sideNavTab" onclick="loadLoginPage()">
+                <button class="sideNavTab" onclick="loadPage('login_page.html')">
                     Sign-up/Sign-in
                 </button>
-                <button class="sideNavTab" onclick="loadHomePage()">
+                <button class="sideNavTab" onclick="loadPage('landingPage.html')">
                     Home
                 </button>
-                <button class="sideNavTab" onclick="loadAwarenessPage()">
+                <button class="sideNavTab" onclick="loadPage('WhyNutrition.html')">
                     Why Awareness?
                 </button>
-                <button class="sideNavTab" onclick="loadNutritionPage()">
+                <button class="sideNavTab" onclick="loadPage('nutritionnew.html')">
                     Nutrition Simplified
                 </button>
-                <button class="sideNavTab" onclick="loadSelfAssessmentPage()">
+                <button class="sideNavTab" onclick="loadPage('selfassessment.html')">
                     Self-Assessment
                 </button>
-                <button class="sideNavTab" onclick="loadCalculatorsPage()">
+                <button class="sideNavTab" onclick="loadPage('selfassessment2.html')">
                     Calculators
                 </button>
-                <button class="sideNavTab" onclick="loadRecommendedActionsPage()">
+                <button class="sideNavTab" onclick="loadPage('actions.html')">
                     Recommended Action
                 </button>
-                <button class="sideNavTab" onclick="loadToolsPage()">
+                <button class="sideNavTab" onclick="loadPage('tools.html')">
                     Tools
                 </button>
-                <button class="sideNavTab" onclick="loadFAQPage()">
+                <button class="sideNavTab" onclick="loadPage('FAQ.html')">
                     FAQ
                 </button>
-                <button class="sideNavTab" onclick="loadAboutPage()">
+                <button class="sideNavTab" onclick="loadPage('aboutPage.html')">
                     About
-                </button>
-                
+                </button>                
             </div>
             <div id="contentContainer">
                 <object id="mainContent" type="text/html" data="landingPage.html"></object>
