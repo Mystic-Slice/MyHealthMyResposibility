@@ -43,6 +43,10 @@
 
         font-size: x-large;
         color: var(--accent-text-color);
+
+        transition-duration: 0.4s;
+        text-decoration: none;
+        cursor: pointer;
     }
     #sideNavExpandedView{
         flex: 0%;

@@ -2,6 +2,21 @@
 <html>
     <head>
         <link rel="stylesheet" href="landingPageStyle.css"/>
+        <script>
+            var slideIndex = 0;
+            function slideShow() {
+            var i;
+            var x = document.getElementsByClassName("reviewSlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}    
+            x[slideIndex-1].style.display = "block";  
+            setTimeout(slideShow, 4000); // Change image every 2 seconds
+            }
+            setTimeout(slideShow, 0);
+        </script>
     </head>
     <body>
         <div id="headerContent">
@@ -68,6 +83,9 @@ some helpful resourses like the cronometer,the guide published by the NIN and fi
                 </div>
                 <div class="infoCardImg" style="background-image: url(img/recommendedActionsLandingPage.jpg);background-position: center top;"></div>
             </div>
+            <img class="reviewSlides" src="img/slide-1.jpg"/>
+            <img class="reviewSlides" src="img/slide-2.jpg"/>
+            <img class="reviewSlides" src="img/slide-3.jpg"/>
         </div>
     </body>
 </html>
