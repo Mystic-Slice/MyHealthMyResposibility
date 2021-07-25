@@ -3,157 +3,7 @@
     <title>
         Self Assessment
     </title>
-    <style>
-    :root
-    {
-    --primary-color: #A8D0E6;
-    --secondary-color: #FFFFFF;
-    --accent-primary-color: #24305E;
-    --accent-secondary-color: #F76C6C;
-    --accent-text-color: var(--secondary-color);
-    } 
-    body{
-            margin: 0;
-            overflow-x: hidden;
-            font-size: large;
-    }
-    .mainheading{
-        position:absolute;
-        border-style: solid;
-        border-width: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: var(--primary-color);
-        left:30%;
-        top: 31%;
-        font-size: 55px;
-        color: var(black);
-
-     }
-     .mainbody1{
-         background-color: var(--accent-primary-color);
-         padding-top: 1%;
-         padding-bottom: 2%;
-     }
-     .bmilogimg{
-        position:absolute;
-        left:7%;
-        top:87%;
-     }
-     .bmimargin{
-         margin-left: 28.5%;
-         margin-right: 1%;
-     }
-     .bmihead{
-         color:var(--secondary-color);
-         font-size: 25px;
-         position:relative;
-         left:28%;
-     }
-     .bmicon{
-         color: var(--secondary-color);
-         font-size: 23px;
-     }
-     .mainbody2{
-         background-color: var(--accent-secondary-color);
-         padding-top: 0.2%;
-         padding-bottom: 2%;
-     }
-     .growthead{
-         color:var(--secondary-color);
-         font-size: 30px;
-         background-color: var(--accent-primary-color) ;
-         margin-left: 7%;
-         margin-right: 5%;
-     }
-     .growthimghead{
-        color:var(--secondary-color);
-        font-size: 25px;
-     }
-     .growthboys{
-         position:relative;
-         left:7%;
-     }
-     .growthgirls{
-         position:absolute;
-         top:137%;
-         left:55%;
-     }
-     .mainbody3{
-         background-color: var(--accent-primary-color);
-         padding-top: 2%;
-         padding-bottom: 2%;
-     }
-     .waisthead{
-        color:var(--secondary-color);
-         font-size: 30px; 
-         position:absolute;
-        top:285%;
-        left:20%;  
-     }
-     .waistimg{
-         position:relative;
-         left:69%;
-         width: 27%;
-        height:343px;
-        border: 5px solid var(--primary-color);
-     }
-     .waistcon{
-        color: var(--secondary-color);
-        font-size: 25px;
-        position:absolute;
-        top:298%;
-        left:3.5%;
-     }
-     .mainbody4{
-         background-color: var(--accent-secondary-color);
-         padding-top: 13%;
-         padding-bottom: 23%;
-     }
-     .calbalhead{
-        color:var(--secondary-color);
-        font-size: 18px; 
-        position:absolute;
-        left:77%;
-        top:56%;
-     }
-     .calbalimg{
-        width: 27%;
-        height:336px;
-        border: 5px solid var(--primary-color);
-        float:right;
-        position:relative;
-        right:3%;
-        top:5%;
-     }
-     .calhead{
-        color:var(--secondary-color);
-         font-size: 30px; 
-         background-color: var(--accent-primary-color);
-         padding-left: 5px;
-         margin-right: 39%;
-     }
-     .calcon{
-        color: var(--secondary-color);
-        font-size: 20px;
-     }
-     .calimg3{
-         position:relative;
-         left:13%;
-     }
-     .calintakebody{
-         position:absolute;
-         left:3%;
-         top:346%;
-     }
-     .intakerefer{
-         position:absolute;
-         top:490%;
-         left:3%;
-         font-size: 21px;
-         color: var(--secondary-color);
-     }
-    </style>
+    <link rel="stylesheet" type="text/css" href="selfassessmentstyle.css">
  </head>   
  <body style="margin: 0;">
 
@@ -173,7 +23,7 @@
             <div class="bmicon">
                 <p>Body Mass Index is a measure of body fat based on height and weight that applies to adult men and women, and used to determine if the weight is normal according to the person’s height or obese.  
     
-                    It is calculated by body weight/(height)2, where weight is in Kg, and height is in meters.  
+                    It is calculated by body weight/(height)<sup>2</sup>, where weight is in Kg, and height is in meters.  
                     
                     Though it has some limitations such as - overestimate body fat in athletes and others who have a muscular build, and underestimate body fat in older persons and others who have lost muscle, but popularly used.  </p>
                 </div>
@@ -191,41 +41,37 @@
                 <h4>Growth Charts - Boys</h4>
             </div>
             <img src="img/growthchartboys.png" alt="boys" width="40%">
+            <div class="overlayboys" >
+                <div style="position: relative;left: 31%;top: 45%;font-family: Arial, Helvetica, sans-serif;"><b>Growth Chart - Boys</b></div> 
+        </div>
         </div>
         <div class="growthgirls">
             <div class="growthimghead">
                 <h4>Growth Charts - Girls</h4>
             </div>
-            <img src="img/growthchartgirls.png" alt="girls" width="90.2%">
+            <img src="img/growthchartgirls.png" alt="girls" width="88.2%">
+            <div class="overlaygirls" >
+                <div style="position: relative;left: 31%;top: 45%;font-family: Arial, Helvetica, sans-serif;"><b>Growth Chart - Girls</b></div> 
+        </div>
         </div>
     </div>
 
     <div class="mainbody3">
+        <h3><b>Waist circumference</b> </h3>
+        <p>Measuring waist circumference helps screen for possible health risks that come with<br/> overweight and obesity. This risk goes up with a waist size that is greater than 35 inches<br/> for women or greater than 40 inches for men.  </p>
+        <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_dis.htm  " target="_blank" style="color: var(--primary-color);">More Info</a>
         <div class="waistimg">
             <img src="img/Height-weight-chart-Body-Mass-Index.jpg" alt="chart" width="100%"><br/>
         </div>
-        <a href="https://www.britannica.com/science/body-mass-index" target="_blank" style="color: var(--primary-color);font-size:20px;position:relative;left:79.5%;">Reference</a>
-        <div class="waisthead">
-            <h3>Waist circumference </h3>
-        </div>
-        <div class="waistcon">
-            <p>Measuring waist circumference helps screen for possible health risks that come with<br/> overweight and obesity. This risk goes up with a waist size that is greater than 35 inches<br/> for women or greater than 40 inches for men.  </p>
-            <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_dis.htm  " target="_blank" style="color: var(--primary-color);">More Info</a>
-        </div>
+        <a href="https://www.britannica.com/science/body-mass-index" target="_blank" style="color: var(--primary-color);font-size:23px;position:relative;left:5.5%;">Reference</a>
     </div>
 
     <div class="mainbody4">
-        <div class="calbalimg">
-            <img src="img/caloriebalance.png" alt="balance" width="100%">
-        </div>
         <div class="calintakebody">
             <div class="calhead">
                 <center>
                     <h3>Calorie Intake </h3>
                 </center>
-            </div>
-            <div class="calbalhead">
-                <h3>Calorie Balance</h3>
             </div>
             <p style="font-size: 25px;color:var(--secondary-color)">Calculate Calorie intake based on the some of the indian foods :  </p>
             <div class="calcon">
@@ -242,10 +88,11 @@
                 or <a href="http://cronometer.com" target="_blank">here</a> to get the nutrient values in different food items. 
             </p>
         </div>
-    </div>
-     
-    <div class="mainbody4">
-
+        <div class="calbalimg">
+            <img src="img/caloriebalance.png" alt="balance" width="100%">
+            <div class="overlay" >
+                <div style="position: relative;left: 31%;top: 45%;font-family: Arial, Helvetica, sans-serif;"><b>Calorie Balance</b></div> 
+        </div>
     </div>
  </body>
 
