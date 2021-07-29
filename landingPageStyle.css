@@ -4,7 +4,7 @@
     --accent-primary-color: #24305E;
     --accent-secondary-color: #F76C6C;
     --accent-text-color: var(--secondary-color);
-    }
+}
 html,body{
     width: 100%;
     height: 100%;
