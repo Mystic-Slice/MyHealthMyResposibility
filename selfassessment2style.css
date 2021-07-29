@@ -61,7 +61,7 @@
      }
      .bodagepos{
          position:relative;
-         left:1%;
+         left:2%;
      }
      .genderradiopos{
          position:relative;
@@ -73,26 +73,26 @@
      }
      .femalepos{
          position:relative;
-         left:12.6%;
+         left:13.3%;
      }
      .otherspos{
          position:relative;
-         left:12.6%;
+         left:13.3%;
      }
      .lovfontpos{
          position:absolute;
-         top:788px;
+         top:785px;
          left:6%;
      }
      .targetpos{
          position:relative;
-         left:31%;
+         left:34%;
          
      }
      .targetfontpos{
          position:absolute;
-         top:894px;
-         left:5.5%;
+         top:890px;
+         left:6%;
      }
      .submitpos{
         position:relative;
@@ -146,7 +146,7 @@
          padding-bottom: 3%;
      }
      .calhead{
-         font-size: 27px;
+         font-size: 25px;
          margin-left: 3%;
          margin-right: 40%;
          padding-left: 1%;
@@ -156,8 +156,8 @@
      }
      .eghead{
          position:absolute;
-         top:2290px;
-         left:4.4%;
+         top:2260px;
+         left:4%;
      }
      .mainbody4{
         background-color: var(--accent-secondary-color);
