@@ -70,7 +70,7 @@
      }
      .growthgirls{
          position:absolute;
-         top:899px;
+         top:900px;
          left:55%;
      }
      .growthboys:hover .overlayboys {
@@ -86,8 +86,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 695px;
-        width: 506px;
+        height: 660px;
+        width: 480px;
         opacity: 0;
         transition: .5s ease;
         background-color:var(--primary-color);
@@ -99,8 +99,8 @@
         bottom: 0;
         left: 0;
         right: 0;
-        height: 695px;
-        width: 502px;
+        height: 660px;
+        width: 476px;
         opacity: 0;
         transition: .5s ease;
         background-color:var(--primary-color);
@@ -115,10 +115,10 @@
      }
      .waistimg{
          position:absolute;
-         top:1765px;
+         top:1730px;
          left:77%;
          width: 16%;
-        height:183px;
+        height:auto;
         border: solid 5px var(--primary-color);
      }
      .waistimg:hover {
