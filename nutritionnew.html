@@ -57,6 +57,7 @@ position:absolute;
       width:600px;
       border-width: 4px;
       border-color: black;
+      padding:8px;
     }
     .eat{
       position:absolute;
@@ -86,6 +87,7 @@ position:absolute;
       border-width:4px;
       border-color: black;
       width:500px;
+      padding:8px;
 
 
     }
@@ -174,6 +176,7 @@ position:absolute;
       border-style: solid;
       font-size:x-large;
       font-style: helvatica;
+      padding:8px;
 
 
     }
@@ -188,6 +191,7 @@ position:absolute;
       bottom:60px;
       font-style: helvatica;
       font-size: x-large;
+      padding:10px;
 
     }
     .fifth-container{
@@ -248,6 +252,7 @@ position:absolute;
       font-size: 20px;
       font-style: helvatica;
       line-height: 1.2;
+      padding:8px;
 
 
     }
@@ -266,6 +271,7 @@ position:absolute;
       width:350px;
       font-style: helvatica;
       font-size: 25px;
+      padding:8px;
     }
 .calo{
   position:absolute;
@@ -309,8 +315,85 @@ position:absolute;
   bottom:100px;
   right:380px;
 }
+button.button:hover{
+  background-color: #24305E;
+  color:white;
+}
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:100vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+ 
+.popup .content {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:95%;
+  max-width:500px;
+  height:400px;
+  z-index:2;
+  text-align:left;
+  padding:20px;
+  padding-top: 2px;
+  box-sizing:border-box;
+  font-family:"Open Sans",sans-serif;
+}
+ 
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+ 
+.popup.active .overlay {
+  display:block;
+}
+ 
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
+}
+ 
 
   </style>
+  <script >
+  function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
+function togglePopup2(){
+  document.getElementById("popup-2").classList.toggle("active");
+}
+function togglePopup3(){
+  document.getElementById("popup-3").classList.toggle("active");
+}
+function togglePopup4(){
+  document.getElementById("popup-4").classList.toggle("active");
+}
+function togglePopup5(){
+  document.getElementById("popup-5").classList.toggle("active");
+}
+function togglePopup6(){
+  document.getElementById("popup-6").classList.toggle("active");
+}
+  </script>
 </head>
 
 <body>
@@ -349,22 +432,76 @@ While these essential, but can turn out to be toxic if consumed beyond the recom
   </div>
   <div class="third-container">
     <h1 class="classification">Classification Of Nutrients:</h1>
-
-
-    <button class="button btn1">Carbohydrates</button>
-
-
-    <button class="button btn2">Protiens</button>
-
-    <button class="button btn3">Fats&nbsp&nbsp</button>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">×</div>
+        <h1>Carbohydrates</h1>
+        <p>Carbohydrates are your body's main source of energy: They help fuel your brain, kidneys, heart muscles, and central nervous system.For instance, fiber is a carbohydrate that aids in digestion, helps you feel full, and keeps blood cholesterol levels in check. Your body can store extra carbohydrates in your muscles and liver for use when you're not getting enough carbohydrates in your diet. A carbohydrate-deficient diet may cause headaches, fatigue, weakness, difficulty concentrating, nausea, constipation, bad breath and vitamin and mineral deficiencies.</p>
+        <h3>sources:</h3>
+        <p>quinoa, amaranth, barley,berries, citrus fruits ,sweet potatoes, yams, lentils, black beans, low-fat milk,etc.</p>
+      </div>
+    </div>
+    <button class="button btn1" onclick="togglePopup()">Carbohydrates</button>
+    <div class="popup" id="popup-2">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup2()">×</div>
+        <h1>Protiens</h1>
+        <p>Humans can’t survive without all nine essential amino acids. Protein is essential to building bones,and body tissues, such as muscles, but protein does much more than that. Protein participates in practically every process of a cell. It plays a part in metabolic reactions, immune response, protein provides a source of energy, assists in cellular repair, form blood cells, and more.</p>
+        <h3>sources:</h3>
+        <p>meat, poultry, fish, eggs, milk, cheese, yogurt, quinoa,soybeans,etc.</p>
+      </div>
+    </div>
+    <button class="button btn2" onclick="togglePopup2()">Protiens</button>
+    <div class="popup" id="popup-3">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup3()">×</div>
+        <h1>Fats</h1>
+        <p>Fats allow humans and animals to consume fat-soluble vitamins and provide them with essential fatty acids, that is, those indispensable fatty acids that their bodies are unable to synthesize themselves. The efficiency of fat as foodstuff is very high, because the fat contained in food is almost completely reabsorbed by the body. Fats also provide a smooth, creamy consistency to many dishes, which translates into a good mouth-feel.</p>
+        <h3>sources:</h3>
+        <p>butter, oil, nuts, meat, fish,some dairy products,etc.</p>
+      </div>
+    </div>
+    <button class="button btn3" onclick="togglePopup3()">Fats&nbsp&nbsp</button>
 
     <br>
     <br />
     <br><br>
-
-    <button class="button btn4"> &nbsp&nbsp&nbsp&nbspVitamins&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-    <button class="button btn5">Minerals</button>
-    <button class="button btn6">Water</button>
+    <div class="popup" id="popup-4">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup4()">×</div>
+        <h1>Vitamins</h1>
+        <p>Vitamins don't provide energy, like carbohydrates, proteins and fats, but they are essential compounds that help the body grow and function optimally. Thirteen essential vitamins help boost your immunity, strengthen your bones, heal wounds, bolster your eyesight and assist you in obtaining energy from food -- among multiple other functions. Without adequate vitamin intake, you may feel lethargic, be vulnerable to infection and develop other serious complications that can endanger your health and life.</p>
+        <h3>sources:</h3>
+        <p>meat, poultry,carrots,sweet potatoes, spinach, nuts, seeds, vegetable oils,fish,etc.</p>
+      </div>
+    </div>
+    <button class="button btn4" onclick="togglePopup4()"> &nbsp&nbsp&nbsp&nbspVitamins&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    <div class="popup" id="popup-5">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup5()">×</div>
+        <h1>Minerals</h1>
+        <p>Minerals are important basic building blocks for proper nutrition and health. Without them, other nutrients are unable to function properly. Amino acids and enzymes don’t function as well as they should, resulting in other nutrients not breaking down enough to be properly absorbed. The end result; serious vitamin and mineral deficiencies. Minerals create a healthy environment in which the body, using vitamins, proteins, carbohydrates, and fats, can grow, function, and heal itself. They are quite different from vitamins in their structure and the work they do, but the two enjoy an excellent working relationship.</p>
+        <h3>sources:</h3>
+        <p>meat,cereals,fish,milk and dairy foods,fruit and vegetables,nuts,etc.</p>
+      </div>
+    </div>
+    <button class="button btn5" onclick="togglePopup5()">Minerals</button>
+    <div class="popup" id="popup-6">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup6()">×</div>
+        <h1>Water</h1>
+        <p>All plants and animals need water to survive. There can be no life on earth without water. Why is water so important? Because 60 percent of our body weight is made up of water. Our bodies use water in all the cells, organs, and tissues, to help regulate body temperature and maintain other bodily functions. Because our bodies lose water through breathing, sweating, and digestion, it's crucial to rehydrate and replace water by drinking fluids and eating foods that contain water.Water also helps in creating saliva,regulating body temperature,protects tissues and spinal chord,helps in excretion,etc.</p>
+        <h3>sources:</h3>
+        <p>fruits,mineral water,cold/soft drinks,etc.</p>
+      </div>
+    </div>
+    <button class="button btn6" onclick="togglePopup6()">Water</button>
 
   </div>
   <div class="fourth-container">
