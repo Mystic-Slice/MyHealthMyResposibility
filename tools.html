@@ -98,7 +98,7 @@
       }
       .outerlayer{
         position:absolute;
-        height:467px;
+        height:470px;
         width:500px;
         left:50px;
         background-color:#f8f9fa;
@@ -127,6 +127,17 @@
         background-color:#f8f9fa;
 
       }
+      .zoom {
+  padding: 50px;
+  transition: transform .2s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.3);
+}
     </style>
   </head>
   <body>
@@ -173,7 +184,7 @@ provided by the food.<br>
     <h1 style="font-size:40px;"><center>Fitbit</center></h1>
     <br>
     <div class="innerlayer">
-<img src="img/fitbit.jpg" alt="fitbit" class="fitbit">
+<img src="img/fitbit.jpg" alt="fitbit" class="fitbit zoom">
     </div>
   </div>
   <div class="outerlayer2">
@@ -181,10 +192,11 @@ provided by the food.<br>
     <h1 style="font-size:40px;"><center>Strava</center></h1>
     <br>
     <div class="innerlayer">
-<img src="img/strava.jpg" alt="strava" class="fitbit">
+<img src="img/strava.jpg" alt="strava" class="fitbit zoom">
     </div>
   </div>
 
 </div>
+
   </body>
 </html>
