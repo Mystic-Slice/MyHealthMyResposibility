@@ -18,6 +18,9 @@
                 }
             }
             function loadPage(x, fileName){
+                if(document.getElementById("mainContent") == fileName){
+                    return;
+                }
                 document.getElementById("mainContent").data = fileName;
                 var buttons = document.getElementsByClassName("sideNavButton");
                 var tabs = document.getElementsByClassName("sideNavTab");

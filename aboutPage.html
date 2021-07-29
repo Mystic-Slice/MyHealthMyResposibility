@@ -2,12 +2,76 @@
 <html>
     <head>
         <link rel="stylesheet" href="aboutPageStyle.css"/>
+        <script>
+            function validate(){
+                var name = document.getElementById("nameField").value;
+                var phone = document.getElementById("phoneField").value;
+                var email = document.getElementById("emailField").value;
+                var message = document.getElementById("messageField").value;
+
+                if(!(/^[a-zA-Z ]+$/.test(name))){
+                    alert("Please enter a valid name.");
+                    return false;
+                }
+
+                var numbers = "0123456789";
+                if(!("789".includes(phone[0]))){
+                    alert("Phone number not valid.");
+                    return false;
+                }
+                for(var index = 0;index < phone.length;index++){
+                    if(!numbers.includes(phone[index])){
+                        alert("Phone number not valid.");
+                        return false;
+                    }
+                }
+
+                if(!(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email))){
+                    alert("Please enter a valid email address.");
+                    return false;
+                }
+
+                if(!(/^[a-zA-Z0-9_.-]+$/.test(message))){
+                    alert("Please enter a valid message.");
+                    return false;
+                }
+                alert("Feedback submitted.");
+                return true;
+            }
+        </script>
     </head>
     <body>
         <div id="headerContent">
             <span id="header">About Us</span>
         </div>
-        <div id="bodyContent">            
+        <div id="bodyContent">   
+            <div class="section">
+                <div class="sectionHeader">
+                    Who Are We?
+                </div>
+                <div class="sectionContent">
+                    <div class="idCard" style="margin-left: 0%;">
+                        <img class="idCardPhoto" src="img/Person.jpg">
+                        <p class="idCardInfo">Anish</p>
+                    </div>
+                    <div class="idCard">
+                        <img class="idCardPhoto" src="img/Person.jpg">
+                        <p class="idCardInfo">Ashwath</p>
+                    </div>
+                    <div class="idCard">
+                        <img class="idCardPhoto" src="img/Person.jpg">
+                        <p class="idCardInfo">Jayanth</p>
+                    </div>
+                    <div class="idCard">
+                        <img class="idCardPhoto" src="img/Person.jpg">
+                        <p class="idCardInfo">Kishore</p>
+                    </div>
+                    <div class="idCard">
+                        <img class="idCardPhoto" src="img/Person.jpg">
+                        <p class="idCardInfo">Yashasvi</p>
+                    </div>
+                </div>
+            </div>         
             <div class="section">
                 <div class="sectionHeader">
                     Disclaimer
@@ -40,11 +104,13 @@
                     Feedback
                 </div>
                 <div class="sectionContent">
-                    <form method="POST" action="mailto:mhmr@gmail.com">
+                    <form method="POST" onsubmit="return validate()">
                         <label for="nameField">Name: </label>
                         <input type="text" id = "nameField" placeholder="Your Name"><br>
+                        <label for="phoneField">Phone No: </label>
+                        <input type="text" id = "phoneField" placeholder="Your Phone No" minlength="10" maxlength="10"><br>
                         <label for="emailField">E-mail: </label>
-                        <input type="email" id = "emailField" placeholder="Your E-mail"><br>
+                        <input type="text" id = "emailField" placeholder="Your E-mail"><br>
                         <label for="messageField">Message: </label>
                         <textarea id="messageField" name="message" placeholder="Your Feedback"></textarea><br>
                         <input type="submit" value="Submit">
@@ -56,7 +122,7 @@
                     Contact Us
                 </div>
                 <div class="sectionContent" style="display: flex;padding: 0;position: relative;">
-                    <div id="contactInfo" style="flex: 60%;padding-top: 10px;padding-left: 10px;color: var(--accent-secondary-color);">
+                    <div id="contactInfo" style="flex: 60%;padding-top: 10px;padding-left: 10px;color: var(--accent-primary-color);">
                         &rArr;Phone No: +91 12345-67890 <br>
                         &rArr;E-mail: mhmr@gmail.com
                     </div>
